@@ -1,0 +1,300 @@
+body {
+  margin: 0;
+  width: auto;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 150%;
+  color: #000000;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+header,
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-name {
+  align-self: center;
+
+  font-family: "Playfair Display", "Georgia", serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+header .site-name-header {
+  margin-top: 60px;
+  margin-bottom: 41px;
+  font-size: 35px;
+  line-height: 47px;
+}
+
+nav {
+  margin: 0 125px;
+  margin-bottom: 41px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+nav a {
+  margin: 0 5px;
+  padding: 5px;
+  line-height: 18px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.preview-h2 {
+  margin-top: 44px;
+  margin-bottom: 5px;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.season-ticket-h2 {
+  margin-top: 33px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  margin-bottom: 10px;
+
+  font-family: "Playfair Display", "Georgia", serif;
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 31px;
+}
+
+main .main-new {
+  position: relative;
+  height: 444px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+
+  text-align: center;
+  color: #FFFFFF;
+
+  background-color: #575757;
+  background: url(images/back_hotel.jpg);
+  background-position: center;
+  background-size: auto;
+}
+
+.new-tag {
+  position: absolute;
+  top: 0;
+  left: 135px;
+  padding: 5px 25px;
+
+  font-family: "Raleway", "Helvetica", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  background-color: #FF7931 ;
+}
+
+main .logo-hotel {
+  margin-top: 36px;
+  margin-bottom: 10px;
+}
+
+main .main-new-header {
+  margin: 5px;
+  margin-top: 22px;
+
+  font-size: 72px;
+  font-weight: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+main .main-new-description {
+  width: 456px;
+  margin-top: auto;
+  margin-bottom: 38px;
+  align-self: center;
+  line-height: 21px;
+  text-indent: 1em;
+}
+
+main .preview-news {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+main .preview-article {
+  margin: 15px 15px;
+  width: 370px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: left;
+}
+
+main .season-ticket {
+  /* position: relative;
+  z-index: -2; */
+  margin: 39px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+
+  text-align: center;
+
+  background-color: #F7F7F7;
+  background-image: url("images/circle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 707px 707px;
+  }
+
+/* не работают ссылки в теле season-ticket из-за позиционирования
+
+main .circle {
+  position: absolute;
+  z-index: -1;
+
+  width: 707px;
+  height: 707px;
+
+  border-radius: 50%;
+  background-color: #FFFFFF;
+} */
+
+main .season-ticket-article {
+  width: 370px;
+  margin-bottom: 21px;
+}
+
+hr {
+  width: 100px;
+  text-align: center;
+  size: 1px;
+  color: rgba(0, 0, 0, 0.2);
+  opacity: 0.4;
+}
+
+main .button {
+  position: relative;
+  z-index: 9999;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  padding: 15px 30px;
+  padding-right: 60px;
+
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+
+  background-color: #FF7931;
+  background-image: url('images/arrow_forward.png');
+  background-repeat: no-repeat;
+  background-position: 117px 50%;
+}
+
+footer {
+  color: #FFFFFF;
+  background-color: #575757;
+}
+
+footer .site-name-footer {
+  margin-top: 26px;
+  margin-bottom: 27px;
+  font-size: 28px;
+  line-height: 37px;
+  }
+
+footer .navigation-footer {
+  margin-bottom: 0;
+}
+
+footer .navigation-footer::after {
+  content: "";
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #FFFFFF;
+  opacity: 0.4;
+}
+
+footer .contacts {
+  margin-top: 42px;
+  margin-bottom: 46px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer .contact {
+  width: 47px;
+  height: 47px;
+  margin: 5px;
+  line-height: 47px;
+  text-align: center;
+  background-color: #FFFFFF;
+  }
+
+footer .contact img {
+  vertical-align: middle;
+}
+
+a {
+  display: block;
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a:hover .colored-hover,
+nav a:hover {
+  color: #FF7931;
+}
+
+a:hover .white-shadow {
+  filter:
+    drop-shadow(0 -1px 0 #575757)
+    drop-shadow(0 -1px 1px #FFFFFF);
+}
+
+.button:hover {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2) inset;
+}
+
+a:hover .contact {
+  background-color: #FF7931;
+  filter: drop-shadow(0 0 3px #FFFFFF);
+}
